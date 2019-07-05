@@ -1,0 +1,59 @@
+#!/bin/bash
+echo Hallo dies ist ein Test
+
+
+
+x=422
+y=1337
+z=$(python -c "print($x+$y)")
+echo $z
+
+
+
+if [ $x = 42 ]; then
+	echo x is 42
+elif [ $y = 1337 ]; then
+	echo x is a geek
+else
+	echo x is not 42
+fi
+
+
+
+echo Gib eine Zahl ein
+read Zahl
+x=$(($Zahl + 2))
+echo "Du hast $x eingegeben!"
+
+
+
+options="Run Exit"
+select option in $options; do
+	if [ "Run" = $option ]; then
+		clear
+		echo Das Programm wird ausgeführt
+		exit
+	elif [ $option = "Exit" ]; then
+		clear
+		echo Das Programm wird beendet
+		exit
+	else
+		echo error
+	fi
+done
+
+
+
+i=0
+while [ $i -lt 100000 ]; do
+	echo item $i
+	let i=i+1
+done
+
+
+
+i=0
+find . -iname "*" | while read f
+do
+	echo item $f
+done

@@ -1,0 +1,109 @@
+Update:
+apt-get update			Zieht sich die liste mit allen updates
+apt-get upgrade			Führt die Updates aus
+
+apt-get dist-upgrade		Installiert ein System Update
+
+Server:
+ssh IP				Connected sich zu dem Server via SSH
+
+Git:
+git init			Erstellt ein neues Git repository
+git status			Zeigt den Git Status
+git add FileName		Fügt eine spezielle File hinzu
+git add *			Fügt alle Files hinzu
+git commit -m "FileName"	Commited eine spezielle File
+git log				Zeigt die Changelos des gesamten repositorys
+git pull origin master		Zieht sich die aktuellste Version herunter
+git diff HEAD			Zeigt die unterschiede der genauen Dateien
+
+
+
+Allgemein:
+clear				Bereinigt die Console
+pwd				Zeigt den aktuellen pfad
+ls				Zeigt die inhalte des aktuellen pfades (Blau = Ordner / Grün = Ausführbar)
+cd				Geht einen ordner zurück
+cd (2x Tab)			Zeigt die verfügbaren Ordner
+cd OrdnerName			Geht in diesen Ordner
+cd / (2x Tab)			Zeigt ordner unter root
+chmod +x			Rechte vergeben -> 777 / +x = Ausführbar
+whoami				Zeigt wer du aktuell bist
+shutdown -h -r 23:59/now	Fährt das System herunter / -h = normal shutdown / -r = reboot
+
+touch FileName			Erstellt eine neue Datei
+cat FileName			Öffnet eine File
+rm FileName			Löscht eien Datei
+rmdir VerzeichnisName		Löscht ein verzeichnis
+mkdir VerzeichnisName		Erstellt ein neues Verzeichnis
+cp FileName Pfard/FileName	Kopiert eine bestehende File mit Inhalt an den angegebenen Pfard
+mv FileName Pfard/FileName	Verschiebt eine bestehende File mit Inhalt an den angegebenen Pfard
+
+crunch 1 9 Kombinationen -o FileName	Erstellt eine liste aller möglichen kombinationen / STRG+C = Abbruch
+ps -e 				Zeigt alle laufenden Prozesse
+ps -e | grep Name		Sucht einen speziellen Prozess
+ps -e | grep gsd > FileName	Speichert den Output in einer Datei
+ps -e | grep gsd > FileName	Fügt den Output zu bereits existierenden Dateil hinzu
+kill PID			Killt einen Prozess
+
+head -n 5 FileName		Zeigt dei ersten 5 Zeilen einer Datei
+tail -n 5 FileName		Zeigt dei letzen 5 Zeilen einer Datei
+grep Keyword FileName		Sucht nach einem Wort in einer Datei
+grep -i -n -r Keyword FileName	-i = Ignoriert groß-kleinschreibung / -n = Ausgabe der Zeile / -r = Sucht im gesamten Verzeichnis
+grep -n -r  Keyword		Sucht im gesamten Verzeichnis und gibt Pfard + Zeile aus
+Command > FileName		Speichert den Output in einer Datei
+
+git clone Link			Lädt ein git repository herunter
+tar cvf FileName Datei		Komprimiert die angegebenen Dateien
+tar xvf FileName		Entpackt ein Archiv
+find -name FileName		Sucht eine bestimmte Datei (Am schnellsten)
+whereis FileName		Sucht eine bestimmte Datei
+which Command			Sucht Pfard des binaries
+locate FileName			Sucht eine bestimmte Datei
+
+ln FileName1 FileName2		Erstellt eine dauerhafte kopie von der FileName1
+ln -s FileName1 FileName2	Erstellt eine Verlinkung auf eine Datei
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+curl ftp://speedtest.tele2.net/1GB.zip -o speedtest.zip		Macht einen speedtest
+telnet towel.blinkenlights.nl		Spielt StarWars Episode 4 in ASCII ab
+
+
+Eine Animation aus allen JPG-Bildern im aktuellen Verzeichnis entsteht dann z.B. mit diesen beiden Kommandozeilen (Full-HD, 24fps, meine Kamera macht Großbuchstaben als Dateinamen):
+for f in *JPG; do echo file $f; done > "list.txt"
+ffmpeg -hide_banner -f concat -r 24 -i "list.txt" -codec libx264 -s 1920x1080 "output.mp4"
+
+
+
+

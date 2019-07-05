@@ -1,0 +1,6 @@
+#!/bin/bash
+i=0
+find . -iname "*" | while read f
+do
+	echo item $f
+done

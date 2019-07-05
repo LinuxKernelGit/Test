@@ -21,7 +21,8 @@ git log				Zeigt die Changelos des gesamten repositorys
 git pull origin master		Zieht sich die aktuellste Version herunter
 git diff HEAD			Zeigt die unterschiede der genauen Dateien
 git reset FileName		Entzieht die Datei von der Vormerkung zum Commit
-
+git branch BranchName		Erstellt einen neuen Branch
+git checkout BranchName		Wächselt den Branch
 
 
 Allgemein:

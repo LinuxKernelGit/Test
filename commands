@@ -4,15 +4,19 @@ apt-get upgrade			Führt die Updates aus
 
 apt-get dist-upgrade		Installiert ein System Update
 
+
 Server:
 ssh IP				Connected sich zu dem Server via SSH
 
+
 Git:
 git init			Erstellt ein neues Git repository
-git status			Zeigt den Git Status
 git add FileName		Fügt eine spezielle File hinzu
 git add *			Fügt alle Files hinzu
+git status			Zeigt den Git Status
 git commit -m "Message"		Commited eine spezielle File
+git push			Lädt die veränderungen hoch
+
 git log				Zeigt die Changelos des gesamten repositorys
 git pull origin master		Zieht sich die aktuellste Version herunter
 git diff HEAD			Zeigt die unterschiede der genauen Dateien
